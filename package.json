@@ -33,8 +33,7 @@
 	"keywords": [
 		"web-components",
 		"custom-elements",
-		"share",
-		"share-api"
+		"clipboard"
 	],
 	"author": "Saeki Tominaga",
 	"license": "MIT",
