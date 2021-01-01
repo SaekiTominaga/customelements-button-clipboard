@@ -1,2 +1,38 @@
-# customelements-button-clipboard
-Clipboard write button by Custom Elements
+# Clipboard write text button
+
+[![npm version](https://badge.fury.io/js/%40saekitominaga%2Fcustomelements-button-clipboard.svg)](https://badge.fury.io/js/%40saekitominaga%2Fcustomelements-button-clipboard)
+
+Clipboard write text button using `Clipboard.writeText()` by Custom Elements.
+
+## Demo
+
+- [Demo page](https://saekitominaga.github.io/customelements-button-clipboard/demo.html)
+
+## Examples
+
+```
+<button type="button" is="x-clipboard"
+  data-text="Text"
+>Copy</button>
+
+<p id="clipboard-target">Text</p><!-- Target element: If the `data-target-for` attribute exists, write the contents of this element (Node.textContent or HTMLXXXElement.value or HTMLMetaElement.content) to the clipboard. -->
+<button type="button" is="x-clipboard"
+  data-target-for="clipboard-target"
+  data-feedback-for="clipboard-feedback"
+>Copy</button>
+<p id="clipboard-feedback" hidden=""></p><!-- Feedback element: It will be displayed when writing to the clipboard is done. -->
+```
+
+## Attributes
+
+<dl>
+<dt>type [optional]</dt>
+<dd>This function automatically sets <code>type="button"</code>.
+However, it is recommended to manually add <code>type="button"</code> for JavaScript disabled environments and browsers that do not <a href="https://caniuse.com/custom-elementsv1">support Customized built-in elements</a> (Safari 14, Edge Legacy, etc.). According to <a href="https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type">the description in the HTML specification</a>, <q cite="https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type">The missing value default and invalid value default are the <a href="https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-submit-state">Submit Button</a> state</q>.</dd>
+<dt>data-text [conditionally required]</dt>
+<dd>Text to write to clipboard. (Either the `data-target-for` attribute or this attribute is required)</dd>
+<dt>data-target-for [conditionally required]</dt>
+<dd>Target element's ID. (Either the `data-text` attribute or this attribute is required)</dd>
+<dt>data-feedback-for [optional]</dt>
+<dd>Feedback element's ID displayed when writing to the clipboard is done. (If omitted, feedback will be displayed in `console`)</dd>
+</dl>
