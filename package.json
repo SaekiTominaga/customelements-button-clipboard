@@ -1,6 +1,6 @@
 {
 	"name": "@saekitominaga/customelements-button-clipboard",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "Clipboard write text button by Custom Elements.",
 	"keywords": [
 		"web-components",
