@@ -21,4 +21,4 @@ export default class ClipboardButton extends HTMLButtonElement {
      */
     private _getContent;
 }
-//# sourceMappingURL=ButtonClipboard.esm.d.ts.map
+//# sourceMappingURL=ButtonClipboard.d.ts.map

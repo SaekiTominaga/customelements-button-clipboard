@@ -92,3 +92,4 @@ export default class ClipboardButton extends HTMLButtonElement {
     }
 }
 _writeText = new WeakMap(), _targetElement = new WeakMap(), _feedbackElement = new WeakMap();
+//# sourceMappingURL=ButtonClipboard.js.map
