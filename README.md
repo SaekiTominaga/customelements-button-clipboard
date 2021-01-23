@@ -10,7 +10,7 @@ Clipboard write text button using `Clipboard.writeText()` by Custom Elements.
 
 ## Examples
 
-```
+```HTML
 <button type="button" is="x-clipboard"
   data-text="Text"
 >Copy</button>
