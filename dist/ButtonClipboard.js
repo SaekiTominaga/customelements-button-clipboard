@@ -14,8 +14,6 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 var _writeText, _targetElement, _feedbackElement;
 /**
  * Clipboard write text button
- *
- * @version 1.0.0
  */
 export default class ClipboardButton extends HTMLButtonElement {
     constructor() {

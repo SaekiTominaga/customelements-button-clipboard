@@ -1,7 +1,5 @@
 /**
  * Clipboard write text button
- *
- * @version 1.0.0
  */
 export default class ClipboardButton extends HTMLButtonElement {
     #private;
