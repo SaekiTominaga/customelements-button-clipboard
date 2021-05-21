@@ -26,13 +26,13 @@ Clipboard write text button using `Clipboard.writeText()` by Custom Elements.
 ## Attributes
 
 <dl>
-<dt>type [optional]</dt>
+<dt><code>type</code> [optional]</dt>
 <dd>This function automatically sets <code>type="button"</code>.
 However, it is recommended to manually add <code>type="button"</code> for JavaScript disabled environments and browsers that do not <a href="https://caniuse.com/custom-elementsv1">support Customized built-in elements</a> (Safari 14, Edge Legacy, etc.). According to <a href="https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type">the description in the HTML specification</a>, <q cite="https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type">The missing value default and invalid value default are the <a href="https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-submit-state">Submit Button</a> state</q>.</dd>
-<dt>data-text [conditionally required]</dt>
+<dt><code>data-text</code> [conditionally required]</dt>
 <dd>Text to write to clipboard. (Either the `data-target-for` attribute or this attribute is required)</dd>
-<dt>data-target-for [conditionally required]</dt>
+<dt><code>data-target-for</code> [conditionally required]</dt>
 <dd>Target element's ID. (Either the `data-text` attribute or this attribute is required)</dd>
-<dt>data-feedback-for [optional]</dt>
+<dt><code>data-feedback-for</code> [optional]</dt>
 <dd>Feedback element's ID displayed when writing to the clipboard is done. (If omitted, feedback will be displayed in `console`)</dd>
 </dl>
